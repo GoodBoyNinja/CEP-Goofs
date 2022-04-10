@@ -22,8 +22,12 @@ this.Listeners = class {
             this.array.forEach(f => f.apply(this.self));
         }
 
-        fire = this.execute;
-        run = this.execute;
+        fire() {
+            this.execute.apply(this, arguments);
+         }
+        run() {
+            this.execute.apply(this, arguments);
+         }
 
 
         // TODO: see if this works:
