@@ -29,10 +29,6 @@ this.Listeners = class {
             this.execute.apply(this, arguments);
          }
 
-
-        // TODO: see if this works:
-        // run = this.execute();
-
         remove(func) {
             var index = this.array.indexOf(func);
             if (index > -1) {
